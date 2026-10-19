@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Specials | Recipe Secrets Restaurant</title>
+<meta name="description" content="This week's specials at Recipe Secrets Restaurant — starters, mains, desserts and drinks, all built from family recipes.">
+<meta property="og:title" content="Weekly Specials | Recipe Secrets Restaurant">
+<meta property="og:description" content="Starters, mains, desserts and drinks — this week's family-recipe specials.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23211c1a'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' fill='%23c9962c' font-family='Georgia,serif'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a href="index.html" class="brand">Recipe <span>Secrets</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="specials.html">Specials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="reservation.html" class="nav-cta">Reserve a Table</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>This Week's Specials</h1>
+      <p>Four courses, pulled from the recipe box and updated every week.</p>
+    </div>
+  </section>
+
+  <section class="specials">
+    <div class="container">
+      <div class="specials-tabs" role="tablist" aria-label="Menu categories">
+        <button class="tab-btn" role="tab" id="tab-starters" aria-controls="panel-starters" aria-selected="true">Starters</button>
+        <button class="tab-btn" role="tab" id="tab-mains" aria-controls="panel-mains" aria-selected="false">Mains</button>
+        <button class="tab-btn" role="tab" id="tab-desserts" aria-controls="panel-desserts" aria-selected="false">Desserts</button>
+        <button class="tab-btn" role="tab" id="tab-drinks" aria-controls="panel-drinks" aria-selected="false">Drinks</button>
+      </div>
+
+      <div class="specials-panel is-active" id="panel-starters" role="tabpanel" aria-labelledby="tab-starters">
+        <article class="special-card reveal">
+          <div class="special-photo"><img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=700&q=80" alt="Roasted tomato soup with basil oil" loading="lazy"></div>
+          <div class="special-body">
+            <div class="special-top"><h3>Roasted Tomato Soup</h3><span class="special-price">$9</span></div>
+            <p class="special-desc">Slow-roasted tomatoes, basil oil, and a swirl of cream from a recipe our founder's mother never measured.</p>
+          </div>
+        </article>
+        <article class="special-card reveal">
+          <div class="special-photo"><img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=700&q=80" alt="Charred fennel and citrus salad" loading="lazy"></div>
+          <div class="special-body">
+            <div class="special-top"><h3>Charred Fennel &amp; Citrus Salad</h3><span class="special-price">$11</span></div>
+            <p class="special-desc">Blood orange, shaved fennel, and a honey-mustard dressing we finally agreed to serve tableside.</p>
+          </div>
+        </article>
+        <article class="special-card reveal">
+          <div class="special-photo"><img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=700&q=80" alt="Warm house bread with herb butter" loading="lazy"></div>
+          <div class="special-body">
+            <div class="special-top"><h3>Warm House Bread</h3><span class="special-price">$6</span></div>
+            <p class="special-desc">Baked every afternoon, served with herb butter whipped to our grandmother's exact ratio.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="specials-panel" id="panel-mains" role="tabpanel" aria-labelledby="tab-mains" hidden>
+        <article class="special-card reveal">
+          <div class="special-photo"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80" alt="Grandmother's braised short rib with root vegetables" loading="lazy"></div>
+          <div class="special-body">
+            <div class="special-top"><h3>Grandmother's Braised Short Rib</h3><span class="special-price">$34</span></div>
+            <p class="special-desc">Forty-eight hours in a red wine braise, finished with root vegetables from our Sunday family recipe.</p>
+          </div>
+        </article>
+        <article class="special-card reveal">
+          <div class="special-photo"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=700&q=80" alt="Pan-seared sea bass with citrus butter" loading="lazy"></div>
+          <div class="special-body">
+            <div class="special-top"><h3>Pan-Seared Sea Bass</h3><span class="special-price">$29</span></div>
+            <p class="special-desc">A citrus-butter sauce from our chef's coastal grandmother, served with charred fennel.</p>
+          </div>
+        </article>
+        <article class="special-card reveal">
+          <div class="special-photo"><img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=700&q=80" alt="Handmade pappardelle pasta with wild mushroom ragu" loading="lazy"></div>
+          <div class="special-body">
+            <div class="special-top"><h3>Handmade Pappardelle</h3><span class="special-price">$24</span></div>
+            <p class="special-desc">Rolled fresh each morning, tossed with a wild mushroom ragu that's never once appeared in writing.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="specials-panel" id="panel-desserts" role="tabpanel" aria-labelledby="tab-desserts" hidden>
+        <article class="special-card reveal">
+          <div class="special-photo"><img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=700&q=80" alt="The Secret Tart, a dark chocolate dessert" loading="lazy"></div>
+          <div class="special-body">
+            <div class="special-top"><h3>The Secret Tart</h3><span class="special-price">$12</span></div>
+            <p class="special-desc">Dark chocolate, sea salt, and one ingredient we genuinely won't name.</p>
+          </div>
+        </article>
+        <article class="special-card reveal">
+          <div class="special-photo"><img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=700&q=80" alt="Caramelized pear tart with vanilla cream" loading="lazy"></div>
+          <div class="special-body">
+            <div class="special-top"><h3>Caramelized Pear Tart</h3><span class="special-price">$10</span></div>
+            <p class="special-desc">Pears from the Sunday market, caramelized slow, finished with a vanilla cream our chef still tweaks weekly.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="specials-panel" id="panel-drinks" role="tabpanel" aria-labelledby="tab-drinks" hidden>
+        <article class="special-card reveal">
+          <div class="special-photo"><img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&w=700&q=80" alt="House cocktail with a citrus garnish" loading="lazy"></div>
+          <div class="special-body">
+            <div class="special-top"><h3>The Recipe Box</h3><span class="special-price">$14</span></div>
+            <p class="special-desc">Our house cocktail — bourbon, fig, and a bitters blend we mix in the back and never discuss.</p>
+          </div>
+        </article>
+        <article class="special-card reveal">
+          <div class="special-photo"><img src="https://images.unsplash.com/photo-1510626176961-4b57d4fbad04?auto=format&fit=crop&w=700&q=80" alt="A glass of red wine from the restaurant's list" loading="lazy"></div>
+          <div class="special-body">
+            <div class="special-top"><h3>Reserve Red, by the Glass</h3><span class="special-price">$13</span></div>
+            <p class="special-desc">A rotating red chosen each week to stand up to the short rib.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">Recipe <span>Secrets</span></p>
+        <p>Family recipes, three generations guarded, finally served to you.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="about.html">About</a>
+        <a href="specials.html">Specials</a>
+        <a href="reservation.html">Reservations</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Find Us</h4>
+        <p>[ADDRESS]</p>
+        <a href="tel:[PHONE]">[PHONE]</a>
+        <a href="mailto:[EMAIL]">[EMAIL]</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Recipe Secrets Restaurant.</span>
+      <span>Built with care, not frameworks.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

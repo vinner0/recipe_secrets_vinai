@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Directions | Recipe Secrets Restaurant</title>
+<meta name="description" content="Address, phone, email and directions for Recipe Secrets Restaurant, plus a quick contact form for questions or private events.">
+<meta property="og:title" content="Contact | Recipe Secrets Restaurant">
+<meta property="og:description" content="Find us, call us, or send a message — we're happy to help.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=1200&q=80">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23211c1a'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' fill='%23c9962c' font-family='Georgia,serif'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a href="index.html" class="brand">Recipe <span>Secrets</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="specials.html">Specials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="reservation.html" class="nav-cta">Reserve a Table</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Find Us</h1>
+      <p>Questions, private events, or just can't find parking — we're here to help.</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container form-layout">
+      <div class="reveal">
+        <h2>Contact Details</h2>
+        <ul class="info-list">
+          <li><strong>Address</strong><span>[ADDRESS]</span></li>
+          <li><strong>Phone</strong><span><a href="tel:[PHONE]">[PHONE]</a></span></li>
+          <li><strong>Email</strong><span><a href="mailto:[EMAIL]">[EMAIL]</a></span></li>
+          <li><strong>WhatsApp</strong><span><a href="https://wa.me/[WHATSAPP]" target="_blank" rel="noopener">Message us on WhatsApp</a></span></li>
+          <li><strong>Hours</strong><span>[HOURS]</span></li>
+        </ul>
+
+        <div class="map-frame" style="margin-top: 1.5rem;">
+          <iframe
+            src="https://www.google.com/maps?q=Recipe%20Secrets%20Restaurant&output=embed"
+            title="Map showing the location of Recipe Secrets Restaurant"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="form-card reveal">
+        <h2 style="margin-top:0;">Send a Message</h2>
+        <!-- Formspree: replace YOUR_FORM_ID with your real Formspree form ID -->
+        <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <div class="field">
+            <label for="contact-name">Full name</label>
+            <input type="text" id="contact-name" name="name" autocomplete="name" required>
+            <p class="field-error" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" name="email" autocomplete="email" required>
+            <p class="field-error" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" required placeholder="How can we help?"></textarea>
+            <p class="field-error" role="alert"></p>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-msg" id="contact-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">Recipe <span>Secrets</span></p>
+        <p>Family recipes, three generations guarded, finally served to you.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="about.html">About</a>
+        <a href="specials.html">Specials</a>
+        <a href="reservation.html">Reservations</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Find Us</h4>
+        <p>[ADDRESS]</p>
+        <a href="tel:[PHONE]">[PHONE]</a>
+        <a href="mailto:[EMAIL]">[EMAIL]</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Recipe Secrets Restaurant.</span>
+      <span>Built with care, not frameworks.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
