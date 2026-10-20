@@ -116,11 +116,11 @@ section { padding: 4.5rem 0; }
 }
 .brand {
   font-family: var(--font-head);
-  color: var(--cream-text);
+  color: yellow;
   font-size: 1.35rem;
   letter-spacing: 0.01em;
 }
-.brand span { color: var(--gold); }
+.brand span { color: yellow; }
 .nav-toggle {
   display: none;
   background: none;
